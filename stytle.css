@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(217, 225, 231);
+}
+/* ############# utility classes ############### */
+.container{
+    max-width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+header a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+header a:hover{
+    border: 2px solid white;
+    padding: 5px;
+}
+.mar-top{
+    padding-top: 7rem;
+}
+/* ####################### header stylling ##################### */
+.Navbar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: rgb(13, 15, 37);
+    text-align: center;
+    padding: 0.7rem
+}
+.logo{
+  
+    color: aliceblue;
+}
+.all{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 5px;
+}
+.Search{
+    padding: 5px 8px;
+    width: 570px;
+    border-radius: 5px 5px 5px 5px;
+    height: 35px;
+}
+.submit{
+    padding: 5px 7px;
+    border: none;
+    background-color: #febd69; 
+    color: #232f3e;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.lang{
+    background-color: transparent;
+    color: white;
+    font-size: large;
+}
+#lg1{
+    width: 50px;
+
+}
+
+#lg2{
+    background: none;
+    width: 75px;
+    padding: 0.4rem;
+    color: white;
+    border: none;
+}
+
+#lg3{
+    background: none;
+    width: 180px;
+    padding: 0.4rem;
+    color: white;
+    border: none;
+}
+
+/* ################################# sub nav stylling    ################################## */
+.sub-nav{
+    display: flex;
+    position: relative;
+    background: rgb(37, 60, 94);
+    gap: 20px;
+    padding: 0.5rem;
+    font-size: 13px;
+}
+
+.background-images{
+    
+    border: 2px solid rgb(37, 60, 94);
+    border-bottom: white;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(217, 225, 231) 100%),url(../images/7130x7c9NmL._SX3000_.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* height: 100vh; */
+
+}
+.background-images::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* ###################### landing items stylling ################ */
+.all-pro{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 17.5rem;
+}
+.all-pro a,.all-pro2 a{
+    color: black;
+    text-decoration: none;
+}
+.pros{
+     display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+    height: 400px;
+    background: white;
+    margin: 0px 8px;
+    padding: 10px;
+}
+.product{
+    width: 45%;
+    height: 150px;
+    padding: 5px;
+    margin: auto;
+}
+.pr4{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+.product img{
+    width: 100%;
+    height: 120px;
+   display: block;
+   margin-bottom: 10px;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  */
+}
+.pros h5{
+    font-weight: 400;
+}
+.btn{
+    all: unset;
+    cursor: pointer;
+    color: rgb(37, 116, 161);
+    padding-top: 2rem;
+    margin-right: 3px;
+}
+.btn2{
+    all: unset;
+    cursor: pointer;
+    color: rgb(37, 116, 161);
+    padding-top: 0.5rem;
+    margin-right: 3px;
+}
+.pros h3,.btn,.btn2{
+    padding-left: 0.7rem;
+}
+.all-pro2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+/* ################ coursable images ################### */
+
+
+.carousel-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
+  /* padding: 0 20px; */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+
+    background: white;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  /* padding: 10px 0; */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  margin-top: 2rem;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* ##################### perso stylling ###################### */
+.perso{
+    background: white;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+.perso a{
+    text-decoration: none;
+    color: black;
+}
+.btnn{
+    color: black;
+    margin: auto;
+    background: #ff9900;
+    width: 150px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* #################### footer stylling ############################# */
+.footer li{
+    list-style: none;
+    
+}
+.footer{
+    font-size: 14px;
+    background: #232f3e;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    padding: 20px;
+}
+.f1 h3{
+    padding-bottom: 1rem;
+}
+.f1 li{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.f1 li a{
+    text-decoration: none;
+    color: white;
+}
+.f1 li:hover{
+    border-bottom: 1px solid white;
+}
+/* ############# footer stylling ################### */
+  
+  .amazon-footer {
+    background: #131a22;
+    color: #ccc;
+    padding: 20px 200px;
+    font-size: 10px;
+    margin: auto;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1 1 calc(14% - 30px);
+    margin: 10px;
+  }
+  
+  .footer-column h4 {
+    /* font-weight: bold; */
+    font-size: 11px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .footer-column p {
+    margin: 0 0 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  
+  .footer-bottom a {
+    color: #00a8e1;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
